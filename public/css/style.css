@@ -1,0 +1,253 @@
+:root {
+  --card-border: rgba(0, 0, 0, 0.3);
+  --card-text: #525252;
+}
+
+html, body {
+  height: auto;
+  margin: 0;
+  font-family: "游明朝", "Yu Mincho", "Hiragino Mincho Pro", "Serif", "Times New Roman";
+  background-color: #EAE6E0;
+}
+
+/* body {
+
+} */
+
+.font-color {
+  color: #C0C0C0;
+}
+
+/* header部分 */
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.header-z {
+  z-index: 2;
+}
+
+/* ファーストビュー画像 */
+.header-img {
+  position: absolute;
+  inset: 0px;
+  background-image: url("../images/first_view.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-img:before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+/* ヘッダーナビゲーション */
+.header-nav {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 4%;
+  height: 80px;
+}
+
+.header-list-item {
+  padding: 20px;
+  font-size: 22px;
+}
+
+.first-view {
+  width: auto;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-h1 {
+  font-size: 72px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0px 2px 5px;
+}
+
+.header-h2 {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #E6E6FA;
+  text-shadow: 0px 2px 5px;
+}
+
+/* mainの部分 */
+
+/* .main {
+
+} */
+
+.main-container {
+  margin-bottom: 20%;
+  position: relative;
+  height: 150%;
+}
+
+.title-container {
+  text-align: center;
+  padding: 14%;
+}
+
+.title {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 68px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0px 4px 10px;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+  width: 100%;
+  height: 4px;
+  background-color: #C0C0C0;
+  box-shadow: 0px 2px 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 20px;
+  width: 84%;
+  height: 100%;
+}
+
+/* カードはじまり */
+.card {
+  flex: 1 1 calc(33.333% - 80px);
+  height: 500px;
+  background-color: #ffffff;
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.card-img1 {
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  background-image: url("../images/kinkakuji-cut.jpg");
+  background-size: cover;
+}
+
+.card-img2 {
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  background-image: url("../images/kiyomizudera-cut.jpg");
+  background-size: cover;
+}
+
+.card-img3 {
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  background-image: url("../images/ginkakuji-cut.jpg");
+  background-size: cover;
+}
+
+.card-img4 {
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  background-image: url("../images/fushimi-inari-cut.jpg");
+  background-size: cover;
+}
+
+.card-img5 {
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  background-image: url("../images/daimonji-cut.jpg");
+  background-size: cover;
+}
+
+.card-img6 {
+  position: absolute;
+  width: 100%;
+  height: 65%;
+  background-image: url("../images/arashiyama-take-cut.jpg");
+  background-size: cover;
+}
+
+/* カードおわり */
+
+.card-content {
+  position: absolute;
+  top: 65%;
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  border-left: 1px solid var(--card-border);
+  width: 100%;
+  height: 35%;
+}
+
+.card-title {
+  width: 80%;
+  padding: 20px 0 20px 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--card-text);
+}
+
+.card-article {
+  width: 80%;
+  padding: 0 0 0 20px;
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--card-text);
+}
+
+/* footer部分 */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.footer-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.copy-right {
+  color: #ffffff;
+}
